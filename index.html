@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Hello World</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cesium.com/downloads/cesiumjs/releases/1.64/Build/Cesium/Cesium.js"></script>
+  <link href="https://cesium.com/downloads/cesiumjs/releases/1.64/Build/Cesium/Widgets/widgets.css" rel="stylesheet">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="white"/> 
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />  
+  <link rel="apple-touch-icon" href="images/hello-icon-152.png">   
+  <meta name="theme-color" content="white"/>  
+  <meta name="apple-mobile-web-app-capable" content="yes">  
+  <meta name="apple-mobile-web-app-status-bar-style" content="black"> 
+  <meta name="apple-mobile-web-app-title" content="Hello World"> 
+  <meta name="msapplication-TileImage" content="images/hello-icon-144.png">  
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+</head>
+<body class="fullscreen">
+  <div id="cesiumContainer" style="width: 700px; height:400px"></div>
+  <script>
+    Cesium.Ion.defaultAccessToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJmMDQ3ODhhNS0wY2M1LTQzMzgtYTAxMy0wNjA1MTA5NDM5MTEiLCJpZCI6MTk0NzUsInNjb3BlcyI6WyJhc3IiLCJnYyJdLCJpYXQiOjE1NzU1ODU0NDR9.zZZE_WU3OJRNvEx_VVFt0PzPoEmQfJP9RypbqnJZxkA';
+    var viewer = new Cesium.Viewer('cesiumContainer', {
+    terrainProvider: Cesium.createWorldTerrain()
+});
+  </script>
+  <div class="container">
+    <h1 class="title">Hello World!</h1>
+  </div>
+    <script src="main.js"></script>
+</body>
+</html>
